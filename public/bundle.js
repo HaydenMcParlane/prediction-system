@@ -9550,6 +9550,10 @@ var _SwFooter = __webpack_require__(303);
 
 var _SwFooter2 = _interopRequireDefault(_SwFooter);
 
+var _SwWatchList = __webpack_require__(442);
+
+var _SwWatchList2 = _interopRequireDefault(_SwWatchList);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9574,6 +9578,7 @@ var SwApplication = function (_React$Component) {
                 'div',
                 null,
                 _react2.default.createElement(_SwNavbar2.default, null),
+                _react2.default.createElement(_SwWatchList2.default, null),
                 _react2.default.createElement(_SwFooter2.default, null)
             );
         }
@@ -42435,6 +42440,113 @@ function isReactComponent(component) {
   return !!(component && component.prototype && component.prototype.isReactComponent);
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 442 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(182);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactBootstrap = __webpack_require__(295);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SwWatchList = function (_React$Component) {
+    _inherits(SwWatchList, _React$Component);
+
+    function SwWatchList() {
+        _classCallCheck(this, SwWatchList);
+
+        return _possibleConstructorReturn(this, (SwWatchList.__proto__ || Object.getPrototypeOf(SwWatchList)).apply(this, arguments));
+    }
+
+    _createClass(SwWatchList, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                _reactBootstrap.Row,
+                null,
+                _react2.default.createElement(
+                    _reactBootstrap.Col,
+                    { lg: 8, lgOffset: 2 },
+                    _react2.default.createElement(
+                        _reactBootstrap.Table,
+                        { responsive: true },
+                        _react2.default.createElement(
+                            'thead',
+                            null,
+                            _react2.default.createElement(
+                                'tr',
+                                null,
+                                _react2.default.createElement('th', null),
+                                _react2.default.createElement(
+                                    'th',
+                                    null,
+                                    'Symbol'
+                                ),
+                                _react2.default.createElement(
+                                    'th',
+                                    null,
+                                    '# Shares'
+                                ),
+                                _react2.default.createElement(
+                                    'th',
+                                    null,
+                                    'Buy Price'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'tbody',
+                            null,
+                            _react2.default.createElement(
+                                'tr',
+                                null,
+                                _react2.default.createElement('td', null),
+                                _react2.default.createElement(
+                                    'td',
+                                    null,
+                                    'AAPL'
+                                ),
+                                _react2.default.createElement(
+                                    'td',
+                                    null,
+                                    '200'
+                                ),
+                                _react2.default.createElement(
+                                    'td',
+                                    null,
+                                    '250.11'
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return SwWatchList;
+}(_react2.default.Component);
+
+exports.default = SwWatchList;
 
 /***/ })
 /******/ ]);
