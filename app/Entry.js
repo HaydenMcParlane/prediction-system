@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
 
-import StockManagementContainer from './components/StockManagementContainer';
+import SwApplication from './components/SwApplication';
 
-ReactDOM.render(<StockManagementContainer />);
+ReactDOM.render(<SwApplication />, document.getElementById("react"));
