@@ -1,5 +1,5 @@
 import Flux from 'flux';
 
-let AppDispatcher = Flux.Dispatcher();
+let AppDispatcher = new Flux.Dispatcher();
 
 export default AppDispatcher;
